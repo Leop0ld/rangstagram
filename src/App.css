@@ -2,14 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
 }
@@ -22,7 +17,111 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+#instagramWrapper {
+  width: 100%;
+}
+.instagramCard {
+  position: relative;
+  float: left;
+  width: 24.21875%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin: 0 1.041667% 1.041667% 0;
+  -webkit-animation: fadeIn 0.4s ease-in-out;
+  animation: fadeIn 0.4s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+.instagramCard:nth-child(4n) {
+  margin-right: 0;
+}
+.instagramCard-imageWrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+.instagramCard-image {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#popup_wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlOzEo46UAAAAApJREFUeF5jYAAAAAIAAd6ej78AAAAASUVORK5CYII=');
+  zoom: 1;
+}
+#popup_wrapper:nth-child(n) {
+  filter: none;
+}
+#popup_wrapper .overlay {
+  padding: 5% 0;
+}
+
+.instagramDetail {
+  width: 100%;
+}
+
+.instagramDetail ig-embed {
+  margin: 0 auto !important;
+}
+
+@media screen and (max-width: 991px) {
+  .instagramCard {
+      width: 32.333333%;
+      margin: 0 1.5% 1.5% 0;
+  }
+  .instagramCard:nth-child(4n) {
+      margin-right: 1.5%;
+  }
+  .instagramCard:nth-child(3n) {
+      margin-right: 0;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .instagramCard {
+      width: 49.1%;
+      margin: 0 1.8% 1.8% 0;
+  }
+  .instagramCard:nth-child(3n) {
+      margin-right: 1.8%;
+  }
+  .instagramCard:nth-child(2n) {
+      margin-right: 0;
+  }
+}
+
+@media screen and (max-width:543px) {
+  .instagramCard {
+      width: 100%;
+      margin: 0 0 3.846154% 0;
+  }
+  .instagramCard:nth-child(4n) {
+      margin-right: 0;
+  }
 }
