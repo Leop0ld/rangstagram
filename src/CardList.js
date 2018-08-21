@@ -22,7 +22,7 @@ class CardList extends Component {
     };
   }
   getInstagramImageURL(code) {
-    return "https://www.instagram.com/p/" + code + "/media/?size=m";
+    return `https://www.instagram.com/p/${code}/media/?size=m`;
   }
 
   onClick(e) {
