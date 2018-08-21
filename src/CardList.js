@@ -6,7 +6,8 @@ class CardList extends Component {
     super(props);
     this.state = {
         instagramCodeList: [
-          "BkuMs6fANLP", "BkIJPnqhuVG",
+          "BmC_vNPBU1b",
+          "Bl4V43rBjs_", "BlA7WsGh673", "BkuMs6fANLP", "BkIJPnqhuVG",
           "BjcYk7MBQEy", "BjMOVgqBnVT", "Bi9JmsZBhW5", "BhgCLJyB2GM",
           "BhWb_Dehbk3", "BhT3vPghRo9", "BhLvzqQAooI", "BhIHmN0gxyv",
           "Bg5vLYyA0Ta", "Bg0mceqgi5O", "BgxOSYPAHWF", "Bgcn4cPBghs",
