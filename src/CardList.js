@@ -23,13 +23,17 @@ class CardList extends Component {
   getInstagramImageURL(code) {
     return "https://www.instagram.com/p/" + code + "/media/?size=m";
   }
+
+  onClick(e) {
+    console.log(e.target);
+  }
+
   render() {
     return (
       <div className="CardList">
         {
           this.state.instagramCodeList.map((code) => {
-            return (<Card key={code}
-                          code={code}
+            return (<Card key={code} code={code} onClick={this.onClick.bind(this)}
                           thumbnail={this.getInstagramImageURL(code)}/>);
           })
         }
