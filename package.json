@@ -1,7 +1,7 @@
 {
   "name": "rangstagram",
   "version": "0.1.0",
-  "homepage" : "https://leop0ld.github.io/rangstagram",
+  "homepage" : "https://leop0ld.github.io",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
